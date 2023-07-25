@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Itim', cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0b0c18;
+    color: white;
+    height: 100vh;
+
+
+}
+.title{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+.game{
+    display:flex ;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.board{
+    display: none;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+}
+
+.cell{
+   border: 1px solid #fffefe4a ;
+   width: 100px;
+   height: 100px;
+   font-size: 72px;
+   text-align:center ;
+   line-height: 100px;
+   cursor: pointer;
+
+}
+
+.cell.X{
+    color: #3872f5;
+}
+
+.cell.O{
+    color: #3cad5a;
+}
+
+.scoreboard{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+.score{
+    color: #bf1f38;
+}
+
+.player1 :first-child{
+    font-size: 3rem;
+    color: #3872f5;
+
+}
+
+.player2 :first-child{
+    font-size: 3rem;
+    color: #3cad5a;
+
+
+}
+
+.player1,.player2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+}
+#message{
+    color: white;
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+#start-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #bf1f38;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; 
+}
+#start-btn:hover{
+    background-color: #3872f5;
+}
